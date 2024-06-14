@@ -3,7 +3,6 @@
 
 import rospy
 import tf
-from math import pi
 from nav_msgs.msg import Odometry
 
 # tf 는 물체의 위치와 자세 데이터를 좌표계로 나타내는 예제입니다.
@@ -15,7 +14,6 @@ from nav_msgs.msg import Odometry
 class Ego_listener():
     def __init__(self):
         rospy.init_node('status_listener', anonymous=True)
-        
         rospy.Subscriber("odom", Odometry, self.odom_callback)
         rospy.spin()
 

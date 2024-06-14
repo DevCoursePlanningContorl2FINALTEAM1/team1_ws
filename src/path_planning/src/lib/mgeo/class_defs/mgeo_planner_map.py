@@ -465,7 +465,7 @@ class MGeoPlannerMap(object): # super method의 argument로 전달되려면 obje
         global_info, node_set, link_set, junction_set = MGeoPlannerMap.load_node_and_link(folder_path)
 
         lane_marking_set, lane_node_set = MGeoPlannerMap.load_lane_marking(folder_path)
-         
+
         sign_set = MGeoPlannerMap.load_traffic_sign(folder_path, link_set)
         light_set = MGeoPlannerMap.load_traffic_light(folder_path, link_set)
         

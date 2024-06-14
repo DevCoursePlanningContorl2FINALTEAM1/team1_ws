@@ -49,7 +49,7 @@ class pathMaker :
 
 if __name__ == '__main__' :
     try:
-        p_m=pathMaker("drive", "parking")
+        p_m=pathMaker("path_planning", "parking")
     except rospy.ROSInternalException:
         pass
             
